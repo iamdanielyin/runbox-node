@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "prestart": "NODE_ENV=production npm install --only=production",
+    "start": "NODE_ENV=production node index.js"
   },
   "keywords": [],
   "author": "Daniel Yin <yinfxs@gmail.com>",

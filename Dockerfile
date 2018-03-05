@@ -10,7 +10,6 @@ WORKDIR /opt/app
 COPY . .
 
 RUN npm config set registry https://registry.npm.taobao.org
-RUN npm install --only=production
 
 EXPOSE 3000
 VOLUME [ "/opt/app" ]
