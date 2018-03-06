@@ -7,7 +7,7 @@ RUN apk update && apk add python make tzdata \
 
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
-COPY . .
+COPY index.js package.json .
 
 RUN npm config set registry https://registry.npm.taobao.org
 
